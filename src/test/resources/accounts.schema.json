@@ -1,17 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "array",
-  "default": [],
-  "items": {
+    "items": {
     "type": "object",
-    "additionalProperties": false,
-    "required": [
+        "required": [
       "id",
       "name",
       "number",
       "balance",
       "currency"
     ],
+      "additionalProperties": false,
     "properties": {
       "id": {
         "type": "integer"
@@ -29,7 +28,8 @@
         "default": 0
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "enum": ["RUB", "USD"]
       }
     }
   }
